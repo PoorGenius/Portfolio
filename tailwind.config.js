@@ -11,6 +11,7 @@ export default {
         "primary": "#081B29",
         "secondary": "#399AC4",
         "heading2": "#0EADEE",
+
       },
     },
     fontFamily: {

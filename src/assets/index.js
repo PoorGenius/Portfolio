@@ -3,6 +3,7 @@ import close from './close.svg';
 import reactSvg from './react.svg';
 import mountain from './mountain.svg';
 import me from './me.png';
+import memountain from './memountain.svg';
 
 export {
     menu,
@@ -10,4 +11,5 @@ export {
     reactSvg,
     mountain,
     me,
+    memountain,
 }
