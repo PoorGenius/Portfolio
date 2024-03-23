@@ -8,19 +8,22 @@ const App = () => {
   return (
     <BrowserRouter>
       <div className="relative bg-primary overflow-x-hidden">
-        <div className="min-h-[360px]">
-          <Navbar />
-          <Hero />
+        <div className="w-full flex justify-center">
+          <div className="min-h-[360px]">
+            <Navbar />
+            <Hero />
+          </div>
         </div>
         <div className="w-full flex justify-center">
-          <div className="lg:w-[1440px] bg-black relative w-full">
+          <div className="bg-black relative w-full">
             <About />
             <StarsCanvas />
           </div>
         </div>
-
-        <div>
+        <div className="black__gradient w-full">
           <Skills />
+        </div>
+        <div className="w-full flex justify-center">
           <Projects />
         </div>
         <div>

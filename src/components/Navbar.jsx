@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { slideIn } from "../animations/slideInAnimations";
+import { slideIn } from "../utils/slideInAnimations";
 import { navLinks } from "../constants";
 import { menu, close } from "../assets";
 
@@ -14,7 +14,7 @@ const Navbar = () => {
 
     return (
         <nav className="w-full flex justify-center items-center font-roboto font-bold text-[20px]">
-            <div className="w-full flex justify-between items-center max-w-[1440px] text-white px-6 py-8">
+            <div className="w-full flex justify-between items-center max-w-[1440px] text-white px-6 py-14">
                 <Link to="/" onClick={() => setActive("")}>
                     <h4>Albin Hasanaj</h4>
                 </Link>

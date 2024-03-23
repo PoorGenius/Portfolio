@@ -10,6 +10,6 @@
     background: linear-gradient(90deg, #399AC4 0%, #FFF 100%);
 }
 
-.effect-blur {
-    backdrop-filter: blur(10px);
+.black__gradient {
+    background: linear-gradient(180deg, #010101 0%, #081B29 100%);
 }
