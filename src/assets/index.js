@@ -18,6 +18,20 @@ import fusion from './fusion.svg';
 import egg from './egg.svg';
 import arrow from './arrow.svg';
 import linkedin from './linkedin.svg';
+import nodejs from './nodejs.svg';
+import mongodb from './mongodb.svg';
+import python from './python.svg';
+import mysql from './mysql.svg';
+import git from './git.svg';
+import godot from './godot.svg';
+
+import aboutCode from './aboutCode.png';
+import aboutExpansion from './aboutExpansion.png';
+import aboutEducation from './aboutEducation.png';
+import aboutDedication from './aboutDedication.png';
+import aboutVision from './aboutVision.png';
+
+import swipeAnimation from './swipeAnimation.gif';
 
 export {
     menu,
@@ -39,5 +53,17 @@ export {
     fusion,
     egg,
     arrow,
-    linkedin
+    linkedin,
+    aboutCode,
+    aboutExpansion,
+    aboutEducation,
+    aboutDedication,
+    aboutVision,
+    nodejs,
+    mongodb,
+    python,
+    mysql,
+    git,
+    godot,
+    swipeAnimation
 };

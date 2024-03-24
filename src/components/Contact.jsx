@@ -1,8 +1,16 @@
 import { arrow } from "../assets";
 
+import { motion } from "framer-motion";
+import { fadeIn } from "../utils/motion";
+
 const Contact = () => {
     return (
-        <section className="w-full flex flex-col justify-center items-center mt-20 font-roboto">
+        <motion.section
+            variants={fadeIn}
+            initial="hidden"
+            whileInView="visible"
+
+            className="w-full flex flex-col justify-center items-center mt-20 font-roboto">
             <div className="text-center mx-4">
                 <h1 className="text-white text-[48px] lg:text-[64px] font-bold">Love what you see?</h1>
                 <h2 className="text-[24px] lg:text-[36px] font-bold text-heading2">Let's talk!</h2>
@@ -53,7 +61,7 @@ const Contact = () => {
                 </div>
 
             </form>
-        </section>
+        </motion.section>
     );
 };
 

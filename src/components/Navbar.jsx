@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { slideIn } from "../utils/slideInAnimations";
+import { slideIn } from "../utils/motion";
 import { navLinks } from "../constants";
 import { menu, close } from "../assets";
 

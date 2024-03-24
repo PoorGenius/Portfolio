@@ -27,3 +27,33 @@ export const slideIn = (direction) => {
         },
     };
 };
+
+export const fadeIn = {
+    hidden: {
+        opacity: 0,
+    },
+    visible: {
+        opacity: 1,
+        transition: {
+            duration: 1,
+            ease: "easeInOut",
+        },
+    },
+};
+
+export const cardVariants = {
+    enter: (direction) => ({
+        x: direction > 0 ? 1000 : -1000,
+        opacity: 0,
+    }),
+    center: {
+        zIndex: 1,
+        x: 0,
+        opacity: 1,
+    },
+    exit: (direction) => ({
+        zIndex: 0,
+        x: direction < 0 ? 1000 : -1000,
+        opacity: 0,
+    }),
+};
