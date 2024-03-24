@@ -8,8 +8,8 @@ import { projects } from "../constants";
 const ProjectsCard = ({ project, idx }) => {
     return (
         <VerticalTimelineElement
-            className="vertical-timeline-element--work font-roboto"
-            contentStyle={{ background: "#081B29", color: "#fff", border: "1px solid #61DAFB", boxShadow: "none" }}
+            className="vertical-timeline-element--work"
+            contentStyle={{ background: "#081B29", color: "#fff", border: "1px solid #61DAFB", boxShadow: "none", }}
             iconStyle={{ background: "#fff" }}
             date={
                 <div className={`hidden lg:flex text-[24px] font-bold w-full ${idx % 2 == 0 ? "justify-start" : "justify-end"}`}>
@@ -30,10 +30,10 @@ const ProjectsCard = ({ project, idx }) => {
 
             </div>
             <h3 className="lg:hidden block text-[20px] font-bold">{project.title}</h3>
-            <div className="w-full flex flex-col items-center">
-                <p className="max-w-[300px] text-start">
-                    {project.description}
-                    <ul className="flex gap-4 mt-2">
+            <div className="w-full flex flex-col items-center mb-8">
+                <p className="min-w[200px] w-auto max-w-[300px] text-left">
+                    <span className="text-[18px]">{project.description}</span>
+                    <ul className="flex gap-4 mt-4 flex-wrap">
                         {project.tech[0].map((tech, index) => (
                             <li key={index} style={{ color: project.tech[1][index] }} className="text-[14px]">
                                 #{tech}

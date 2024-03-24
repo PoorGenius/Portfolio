@@ -3,15 +3,15 @@ import { arrow } from "../assets";
 const Contact = () => {
     return (
         <section className="w-full flex flex-col justify-center items-center mt-20 font-roboto">
-            <div className="text-center">
-                <h1 className="text-white text-[64px] font-bold">Love what you see?</h1>
-                <h2 className="text-[36px] font-bold text-heading2">Let's talk!</h2>
+            <div className="text-center mx-4">
+                <h1 className="text-white text-[48px] lg:text-[64px] font-bold">Love what you see?</h1>
+                <h2 className="text-[24px] lg:text-[36px] font-bold text-heading2">Let's talk!</h2>
             </div>
             <form className="flex flex-col max-w-[800px]">
                 <div className="flex flex-col md:flex-row gap-6 mt-12">
                     <div className="w-auto lg:w-[400px]">
                         <label htmlFor="firstname"
-                            className="text-heading2 text-[14px] font-bold"
+                            className="text-heading2 text-[10px] lg:text-[14px] font-bold"
                         >YOUR NAME*</label>
                         <input type="text" id="firstname" name="firstname"
                             placeholder="First name"
@@ -19,7 +19,7 @@ const Contact = () => {
                     </div>
                     <div className="w-auto lg:w-[400px]">
                         <label htmlFor="lastname"
-                            className="text-heading2 text-[14px] font-bold"
+                            className="text-heading2 text-[10px] lg:text-[14px] font-bold"
                         >YOUR LAST NAME*</label>
                         <input type="text" id="lastname" name="lastname"
                             placeholder="Last name"
@@ -28,7 +28,7 @@ const Contact = () => {
                 </div>
                 <div className="w-full mt-6">
                     <label htmlFor="email"
-                        className="text-heading2 text-[14px] font-bold"
+                        className="text-heading2 text-[10px] lg:text-[14px] font-bold"
                     >EMAIL ADDRESS*</label>
                     <input type="email" id="email" name="email"
                         placeholder="Eg: example@gmail.com"
@@ -36,7 +36,7 @@ const Contact = () => {
                 </div>
                 <div className="w-full mt-6">
                     <label htmlFor="message"
-                        className="text-heading2 text-[14px] font-bold"
+                        className="text-heading2 text-[10px] lg:text-[14px] font-bold"
                     >YOUR MESSAGE*</label>
                     <textarea id="message" name="message"
                         placeholder="Please enter your message here"

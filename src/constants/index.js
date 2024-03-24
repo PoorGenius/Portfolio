@@ -42,9 +42,9 @@ export const projects = [
         icon: chatapp,
         description: "This project was a bit trickier than the Instagram clone. It's a chat app where people can talk in real time. I used Express for the backend, Socket.IO to make the chatting instant. Users can sign up, log in, and see if their friends are online. The frontend is built using React and Tailwind, with MongoDB as the database.",
         // tech will be react, tailwind, mongodb, nodejs, javascript
-        tech: [["react", "tailwind", "mongodb", "nodejs", "javascript"],
-
-        ["#61DAFB", "#2298BD", "#4FAA41", "#339933", "#FFDE25"]],
+        tech: [
+            ["react", "tailwind", "mongodb", "nodejs", "javascript"],
+            ["#61DAFB", "#2298BD", "#4FAA41", "#339933", "#FFDE25"]],
     },
     {
         title: "3D Portfolio",
@@ -75,4 +75,11 @@ export const projects = [
         ]
 
     }
+]
+
+export const skills = [
+    {
+        title: "Frontend",
+        description: "In my frontend development work, I excel with a variety of tools and technologies. I have a solid grasp of foundational web languages like HTML, CSS, and JavaScript, and I'm adept with modern frameworks such as Tailwind CSS for responsive design and React for dynamic web applications. Additionally, my experience with ThreeJS allows me to create engaging 3D visuals. My skill set combines technical proficiency with creative flair, enabling me to deliver compelling and high-quality web experiences."
+    },
 ]
