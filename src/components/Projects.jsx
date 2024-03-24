@@ -31,7 +31,7 @@ const ProjectsCard = ({ project, idx }) => {
             </div>
             <h3 className="lg:hidden block text-[20px] font-bold">{project.title}</h3>
             <div className="w-full flex flex-col items-center mb-8">
-                <p className="min-w[200px] w-auto max-w-[300px] text-left">
+                <div className="min-w[200px] w-auto max-w-[300px] text-left">
                     <span className="text-[18px]">{project.description}</span>
                     <ul className="flex gap-4 mt-4 flex-wrap">
                         {project.tech[0].map((tech, index) => (
@@ -40,7 +40,7 @@ const ProjectsCard = ({ project, idx }) => {
                             </li>
                         ))}
                     </ul>
-                </p>
+                </div>
             </div>
 
         </VerticalTimelineElement>

@@ -1,10 +1,19 @@
-import { BrowserRouter } from 'react-router-dom';
-
 import { Navbar, Hero, About, Skills, Projects, Contact, Footer } from './components';
-
 import StarsCanvas from './components/Canvas/Stars';
+import toast, { Toaster } from 'react-hot-toast';
 
 const App = () => {
+
+  const handleFormSubmit = (isSuccessful) => {
+    if (isSuccessful) {
+      toast.success("Message sent successfully!");
+    } else {
+      toast.error("Failed to send message! Please try again later.");
+    }
+
+
+  }
+
   return (
     <div className="relative bg-primary overflow-x-hidden">
       <div className="w-full flex justify-center">
@@ -26,7 +35,8 @@ const App = () => {
         <Projects />
       </div>
       <div id="contact">
-        <Contact />
+        <Contact onFormSubmit={handleFormSubmit} />
+        <Toaster />
       </div>
       <Footer />
     </div>
