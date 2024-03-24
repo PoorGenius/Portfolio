@@ -36,19 +36,19 @@ const SkillCard = () => {
     const currentSkill = skills[page];
 
     return (
-        <motion.div {...handlers} className="w-full max-w-[1000px] rounded-[15px] border-solid border-gray-500 border-[3px] my-[16rem] mx-20 flex flex-col justify-center items-center font-roboto text-white md:swipe-indicator">
-            <motion.div
-                key={page}
-                custom={direction}
-                variants={cardVariants}
-                initial="enter"
-                animate="center"
-                exit="exit"
-                transition={{
-                    x: { type: 'spring', stiffness: 300, damping: 30 },
-                    opacity: { duration: 0.2 },
-                }}
-                className="flex flex-col md:flex-row w-full mt-4 mb-12">
+        <motion.div {...handlers}
+            key={page}
+            custom={direction}
+            variants={cardVariants}
+            initial="enter"
+            animate="center"
+            exit="exit"
+            transition={{
+                x: { type: 'spring', stiffness: 300, damping: 30 },
+                opacity: { duration: 0.2 },
+            }}
+            className="w-full max-w-[1000px] rounded-[15px] border-solid border-gray-500 border-[3px] my-[16rem] mx-20 flex flex-col justify-center items-center font-roboto text-white md:swipe-indicator">
+            <div className="flex flex-col md:flex-row w-full mt-4 mb-12">
                 <div className="md:w-[50%] flex flex-col items-center md:items-start">
                     <h1 className="text-[24px] text-center md:text-[36px] mb-2 font-medium w-full">{currentSkill.title}</h1>
                     <div className="flex flex-wrap w-[150px] md:w-full md:gap-10 gap-2 items-center justify-center">
@@ -68,7 +68,7 @@ const SkillCard = () => {
                         <img src={swipeAnimation} alt="swipe animation" className="w-[32px] h-[32px] mt-4" />
                     </div>
                 </div>
-            </motion.div>
+            </div>
         </motion.div>
     );
 };
