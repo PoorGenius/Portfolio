@@ -6,6 +6,7 @@ import { fadeIn } from "../utils/motion";
 
 import { arrow } from "../assets";
 import { BeatLoader } from "react-spinners";
+import toast from "react-hot-toast";
 
 const Contact = ({ onFormSubmit }) => {
     const form = useRef();
@@ -13,6 +14,26 @@ const Contact = ({ onFormSubmit }) => {
 
     const sendEmail = (e) => {
         e.preventDefault();
+
+        const fieldNames = ["firstname", "lastname", "email", "message"];
+
+        const validateFieldNames = fieldNames.every(fieldName => {
+            const fieldValue = form.current.elements[fieldName]?.value.trim();
+            return fieldValue !== "";
+        });
+
+        const emailValue = form.current.elements["email"]?.value.trim();
+
+        if (!emailValue.includes("@")) {
+            toast.error("Please enter a valid email address!");
+            return;
+        } else if (!validateFieldNames) {
+            toast.error("Please fill in all the fields!");
+            return;
+        }
+
+        // check if something in the form is empty
+
         setSending(true);
 
         emailjs
@@ -96,7 +117,7 @@ const Contact = ({ onFormSubmit }) => {
                         ) : (
                             <>
                                 Submit
-                                <img className="inline ml-2 -mb-1" src={arrow} alt="arrow" />
+                                <img className="inline ml-2 mb-1" src={arrow} alt="arrow" />
                             </>
                         )}
                     </button>
