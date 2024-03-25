@@ -11,13 +11,17 @@ const Hero = () => {
                 variants={slideIn("left")}
                 initial="hidden"
                 animate="visible"
-            >Hi, I'm <br className="sm:hidden flex" />Albin Hasanaj
+            > Website under <br className="sm:hidden flex" /> construction
+                {/* Hi, I'm <br className="sm:hidden flex" />Albin Hasanaj */}
             </motion.h1>
             <motion.h2
                 variants={slideIn("right")}
                 initial="hidden"
                 animate="visible"
-                className="sm:text-[26px] lg:text-[36px] text-[18px] text-heading2 font-bold">Fullstack Developer</motion.h2>
+                className="sm:text-[26px] lg:text-[36px] text-[18px] text-heading2 font-bold">
+                {/* Fullstack Developer */}
+                Will not work as intended
+            </motion.h2>
             <motion.div
                 variants={fadeIn}
                 initial="hidden"

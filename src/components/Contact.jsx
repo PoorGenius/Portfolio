@@ -17,6 +17,9 @@ const Contact = ({ onFormSubmit }) => {
     const sendEmail = (e) => {
         e.preventDefault();
 
+        toast.error("Website is currently under construction, you can reach me on: albinhasanaj06@gmail.com");
+        return;
+
         const fieldNames = ["firstname", "lastname", "email", "message"];
 
         const validateFieldNames = fieldNames.every(fieldName => {
