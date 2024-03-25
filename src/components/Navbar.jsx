@@ -30,8 +30,8 @@ const Navbar = () => {
                         initial="hidden"
                         animate={toggle ? "visible" : "hidden"}
                         variants={variants}
-                        className="p-6 bg-black absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl">
-                        <ul className="list-none flex">
+                        className="p-6 bg-black absolute top-20 right-0 mx-4 my-2 w-auto z-10 rounded-xl">
+                        <ul className="list-none flex justify-center">
                             {navLinks.map((link, index) => (
                                 <li
                                     key={link.id}
@@ -41,7 +41,7 @@ const Navbar = () => {
                                         setToggle(false);
                                         // Ensure this is consistent with the mobile version
                                     }}
-                                    className={`${active === link.title ? "text-secondary" : "text-orange hover:text-gray-300"} ${index === 0 ? "" : "ml-6"} hover:cursor-pointer`}>
+                                    className={`${active === link.title ? "text-secondary" : "text-orange hover:text-gray-300"} ${index === 0 ? "" : "ml-4"} hover:cursor-pointer text-[16px]`}>
                                     {link.title}
                                 </li>
                             ))}

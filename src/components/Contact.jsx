@@ -1,4 +1,6 @@
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState } from "react";
+
+
 import emailjs from "@emailjs/browser";
 
 import { motion } from "framer-motion";
@@ -57,6 +59,7 @@ const Contact = ({ onFormSubmit }) => {
 
     return (
         <motion.section
+
             variants={fadeIn}
             initial="hidden"
             whileInView="visible"
@@ -75,6 +78,7 @@ const Contact = ({ onFormSubmit }) => {
                         <input type="text" id="firstname" name="firstname"
                             placeholder="First name"
                             className="w-full h-12 mt-2 p-3 text-white bg-transparent border-[1px] border-solid border-[#2298BD] placeholder:font-bold"
+                            autoComplete="given-name"
                         />
                     </div>
                     <div className="w-auto lg:w-[400px]">
@@ -84,6 +88,7 @@ const Contact = ({ onFormSubmit }) => {
                         <input type="text" id="lastname" name="lastname"
                             placeholder="Last name"
                             className="w-full h-12 mt-2 p-3 text-white bg-transparent border-[1px] border-solid border-[#2298BD] placeholder:font-bold"
+                            autoComplete="family-name"
                         />
                     </div>
                 </div>
@@ -94,6 +99,7 @@ const Contact = ({ onFormSubmit }) => {
                     <input type="email" id="email" name="email"
                         placeholder="Eg: example@gmail.com"
                         className="w-full h-12 mt-2 p-3 text-white bg-transparent border-[1px] border-solid border-[#2298BD] placeholder:font-bold"
+                        autoComplete="email"
                     />
                 </div>
                 <div className="w-full mt-6">
