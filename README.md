@@ -12,6 +12,9 @@ Two official plugins are supported to enable Fast Refresh, a feature that update
 
 As part of ongoing enhancements and fixes, the following changes are slated for implementation:
 
+### Earth Model Screen Sizes readjustment
+- Readjust the sizes on different screen sizes so it's suitable for the width and height of the card
+
 ### Card Design Overhaul
 - Redesign the cards for mobile viewing to enhance visual appeal. This includes modifying the text, height, and width of all elements within the cards.
 
