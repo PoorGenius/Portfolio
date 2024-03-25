@@ -12,9 +12,6 @@ Two official plugins are supported to enable Fast Refresh, a feature that update
 
 As part of ongoing enhancements and fixes, the following changes are slated for implementation:
 
-### Mobile Navigation
-- Adjust the hamburger menu's width to ensure not all content is visible at once, addressing the oversized navbar issue on mobile devices.
-
 ### Card Design Overhaul
 - Redesign the cards for mobile viewing to enhance visual appeal. This includes modifying the text, height, and width of all elements within the cards.
 
